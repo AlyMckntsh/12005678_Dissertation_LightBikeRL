@@ -1,0 +1,7 @@
+mlagents-env\Scripts\activate
+
+cd DEV\LightBikeRL
+
+mlagents-learn "C:\Users\12005678\DEV\LightBikeRL\lightbike_ppo.yaml" --run-id=
+
+tensorboard --logdir results

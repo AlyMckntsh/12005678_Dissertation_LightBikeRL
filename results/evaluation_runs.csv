@@ -1,0 +1,14 @@
+seed,reward_condition,model_checkpoint,episodes,wins,draws,losses,win_rate,avg_reward,avg_episode_length
+999,ArenaControl,Assets/RL-Models/ArenaControl100/lightbike_ppo/lightbike_ppo-10000101.onnx,500,100,3,397,0.2,-0.705001,776.17
+999,ArenaControl,Assets/RL-Models/ArenaControl200/lightbike_ppo/lightbike_ppo-10000244.onnx,500,351,10,139,0.702,0.208295,778.192
+999,ArenaControl,Assets/RL-Models/ArenaControl300/lightbike_ppo/lightbike_ppo-10000004.onnx,500,326,6,168,0.652,0.146206,872.932
+999,ArenaControl,Assets/RL-Models/ArenaControl400/lightbike_ppo/lightbike_ppo-10000063.onnx,500,220,0,280,0.44,-0.155243,1011.856
+999,ArenaControl,Assets/RL-Models/ArenaControl500/lightbike_ppo/lightbike_ppo-10000086.onnx,500,327,6,167,0.654,0.026837,792.008
+999,ArenaControl,Assets/RL-Models/ArenaControl600/lightbike_ppo/lightbike_ppo-10000090.onnx,500,249,0,251,0.498,-0.011484,807.12
+999,SurvivalOnly,Assets/RL-Models/SurvivalOnly100/lightbike_ppo/lightbike_ppo-10000026.onnx,500,310,6,184,0.62,0.062646,871.23
+999,SurvivalOnly,Assets/RL-Models/SurvivalOnly200/lightbike_ppo/lightbike_ppo-10000058.onnx,500,275,2,223,0.55,0.04075,819.072
+999,SurvivalOnly,Assets/RL-Models/SurvivalOnly300/lightbike_ppo/lightbike_ppo-10000057.onnx,500,174,8,318,0.348,-0.348066,864.452
+999,SurvivalOnly,Assets/RL-Models/SurvivalOnly400/lightbike_ppo/lightbike_ppo-10000070.onnx,500,212,0,288,0.424,-0.253197,588.886
+999,SurvivalOnly,Assets/RL-Models/SurvivalOnly500/lightbike_ppo/lightbike_ppo-10000129.onnx,500,362,6,132,0.724,0.120268,687.718
+999,SurvivalOnly,Assets/RL-Models/SurvivalOnly600/lightbike_ppo/lightbike_ppo-10000006.onnx,500,225,4,271,0.45,-0.156117,1014.614
+999,ArenaControl,Assets/RL-Models/ArenaControl700/lightbike_ppo/lightbike_ppo-10000022.onnx,50,29,1,20,0.580000,-0.102866,725.940000

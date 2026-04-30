@@ -1,0 +1,71 @@
+# LightBike PPO training configuration.
+# This file tells ML-Agents how to train the learner policy outside Unity.
+# The behaviour name below must match the Behaviour Name used by the agent in the scene.
+
+behaviors:
+  lightbike_ppo:
+
+    # PPO is the policy-gradient trainer used for this project.
+    # It updates the policy in small clipped steps so training stays stable.
+    trainer_type: ppo
+
+    hyperparameters:
+
+      # batch_size is how many experiences are used in one optimisation pass.
+      # Larger batches are usually smoother, but each update takes longer.
+      batch_size: 1024
+
+      # buffer_size is how many experiences are collected before PPO starts updating.
+      # This is usually set much larger than batch_size so each update has enough variety.
+      buffer_size: 10240
+
+      # learning_rate controls how aggressively the network weights change each update.
+      # Lower values are slower, but they usually reduce unstable jumps in behaviour.
+      learning_rate: 3.0e-4
+
+      # beta is the entropy bonus.
+      # It encourages exploration so the bike does not settle too early into one repeated pattern.
+      beta: 5.0e-3
+
+      # epsilon is PPO's clipping range.
+      # This limits how far one policy update can move away from the previous policy.
+      epsilon: 0.2
+
+      # lambd is the Generalised Advantage Estimation setting.
+      # It balances short-term reward accuracy against longer-term reward smoothing.
+      lambd: 0.95
+
+      # num_epoch is how many times PPO reuses the collected buffer during one update cycle.
+      num_epoch: 3
+
+    network_settings:
+
+      # hidden_units is the width of each hidden layer.
+      # This gives the policy enough capacity to learn useful movement decisions without being too heavy.
+      hidden_units: 128
+
+      # num_layers is the depth of the policy network.
+      # Two layers is a common starting point for small-to-medium ML-Agents tasks.
+      num_layers: 2
+
+    reward_signals:
+      extrinsic:
+        # gamma is the discount factor for future rewards.
+        # Values close to 1 make the agent care more about surviving and setting up future board control.
+        gamma: 0.99
+
+        # strength is the multiplier on the environment reward coming from Unity.
+        # 1.0 means the trainer uses the reward values exactly as they are sent by the project.
+        strength: 1.0
+
+    # max_steps is the total number of agent steps collected before training stops.
+    # This gives the learner enough time to move from simple survival to stronger positional play.
+    max_steps: 10000000
+
+    # time_horizon is how many steps are grouped together when the trainer builds returns.
+    # Larger horizons help when the reward structure depends on choices that matter several moves later.
+    time_horizon: 128
+
+    # summary_freq controls how often ML-Agents writes training statistics to TensorBoard.
+    # Lower values give more frequent charts, but create more logging overhead.
+    summary_freq: 20000

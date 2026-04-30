@@ -1,0 +1,57 @@
+# Unity 6
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+
+# Addressables and generated data
+[Aa]ssets/AddressableAssetsData/*/*.bin*
+[Aa]ssets/StreamingAssets/aa.meta
+[Aa]ssets/StreamingAssets/aa/
+
+# Crash reports
+sysinfo.txt
+*.crash
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity-generated solution/project files
+*.csproj
+*.unityproj
+*.sln
+*.sln.dotSettings
+
+# MonoDevelop
+*.pidb.meta
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider plugin
+Assets/Plugins/Editor/JetBrains*
+
+# Auto-generated test coverage reports
+TestResults/
+CodeCoverage/
+
+# Burst generated files
+[Bb]urst[Aa]ot[Bb]uild[Cc]ache/

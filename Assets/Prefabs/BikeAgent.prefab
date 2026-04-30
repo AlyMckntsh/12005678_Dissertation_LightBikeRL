@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9058451436937860976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4157688774405365487}
+  - component: {fileID: 4096076076609575489}
+  - component: {fileID: 9135382635147061195}
+  - component: {fileID: 1075266947584329241}
+  - component: {fileID: 4920701124304300263}
+  - component: {fileID: 7915962356629058169}
+  m_Layer: 0
+  m_Name: BikeAgent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4157688774405365487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058451436937860976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4096076076609575489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058451436937860976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74d0d5b8fd84f06a1937883ce5707da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellSize: 1
+  stepDuration: 0.15
+  startCell: {x: -10, y: 0}
+  startDirection: {x: 1, y: 0}
+  inputScheme: 0
+  trailHeight: 1
+  trailMaterial: {fileID: 0}
+  isOpponent: 0
+  arenaContext: {fileID: 0}
+  episodeManager: {fileID: 0}
+--- !u!114 &9135382635147061195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058451436937860976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ML-Agents::Unity.MLAgents.Policies.BehaviorParameters
+  m_BrainParameters:
+    VectorObservationSize: 9
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 03000000
+    VectorActionSize: 03000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_DeterministicInference: 0
+  m_ObservableAttributeHandling: 0
+--- !u!114 &1075266947584329241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058451436937860976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8b4b38d0d04f8ab2f59b0f3d8cf2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightBikeAgent
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  fallbackMaxStep: 1500
+--- !u!114 &4920701124304300263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058451436937860976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ML-Agents::Unity.MLAgents.DecisionRequester
+  DecisionPeriod: 5
+  DecisionStep: 0
+  TakeActionsBetweenDecisions: 1
+--- !u!114 &7915962356629058169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058451436937860976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4f9ec9f9a64a8f8ab272b2e7ca57b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RewardManager
+  activePreset: 0
+  survivalOnlyProfile:
+    survivalRewardPerDecision: 0.0006666667
+    dangerousMovePenalty: -0.08
+    deathPenalty: -1.2
+    winReward: 1
+    areaAdvantageReward: 0
+    areaAdvantageDeltaReward: 0
+    opponentPressureReward: 0
+    opponentTighteningReward: 0
+  areaControlProfile:
+    survivalRewardPerDecision: 0.0003
+    dangerousMovePenalty: -0.03
+    deathPenalty: -1
+    winReward: 1
+    areaAdvantageReward: 0.03
+    areaAdvantageDeltaReward: 0.08
+    opponentPressureReward: 0
+    opponentTighteningReward: 0
+  aggressionProfile:
+    survivalRewardPerDecision: 0.00025
+    dangerousMovePenalty: -0.03
+    deathPenalty: -1
+    winReward: 1.05
+    areaAdvantageReward: 0
+    areaAdvantageDeltaReward: 0
+    opponentPressureReward: 0.04
+    opponentTighteningReward: 0.08
+  unboundedSearchRadius: 12

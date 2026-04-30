@@ -1,0 +1,65 @@
+{
+    "lightbike_ppo": {
+        "checkpoints": [
+            {
+                "steps": 8499923,
+                "file_path": "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-8499923.onnx",
+                "reward": 0.32218616926443894,
+                "creation_time": 1773506561.2596896,
+                "auxillary_file_paths": [
+                    "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-8499923.pt"
+                ]
+            },
+            {
+                "steps": 8999897,
+                "file_path": "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-8999897.onnx",
+                "reward": 0.028505880967713892,
+                "creation_time": 1773506755.5049787,
+                "auxillary_file_paths": [
+                    "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-8999897.pt"
+                ]
+            },
+            {
+                "steps": 9499973,
+                "file_path": "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-9499973.onnx",
+                "reward": 0.16072132710057,
+                "creation_time": 1773506948.808952,
+                "auxillary_file_paths": [
+                    "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-9499973.pt"
+                ]
+            },
+            {
+                "steps": 9999988,
+                "file_path": "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-9999988.onnx",
+                "reward": 0.2600949873837332,
+                "creation_time": 1773507141.9793954,
+                "auxillary_file_paths": [
+                    "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-9999988.pt"
+                ]
+            },
+            {
+                "steps": 10000244,
+                "file_path": "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-10000244.onnx",
+                "reward": 0.2600949873837332,
+                "creation_time": 1773507142.0144641,
+                "auxillary_file_paths": [
+                    "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-10000244.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000244,
+            "file_path": "results\\ArenaControl200\\lightbike_ppo.onnx",
+            "reward": 0.2600949873837332,
+            "creation_time": 1773507142.0144641,
+            "auxillary_file_paths": [
+                "results\\ArenaControl200\\lightbike_ppo\\lightbike_ppo-10000244.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.10.0+cu130"
+    }
+}

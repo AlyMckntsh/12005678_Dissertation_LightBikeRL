@@ -1,0 +1,65 @@
+{
+    "lightbike_ppo": {
+        "checkpoints": [
+            {
+                "steps": 8499879,
+                "file_path": "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-8499879.onnx",
+                "reward": -0.15817754114201912,
+                "creation_time": 1773436990.470414,
+                "auxillary_file_paths": [
+                    "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-8499879.pt"
+                ]
+            },
+            {
+                "steps": 8999928,
+                "file_path": "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-8999928.onnx",
+                "reward": -0.06901017692871392,
+                "creation_time": 1773437182.086144,
+                "auxillary_file_paths": [
+                    "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-8999928.pt"
+                ]
+            },
+            {
+                "steps": 9499934,
+                "file_path": "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-9499934.onnx",
+                "reward": -0.0800870677921921,
+                "creation_time": 1773437373.4417045,
+                "auxillary_file_paths": [
+                    "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-9499934.pt"
+                ]
+            },
+            {
+                "steps": 9999898,
+                "file_path": "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-9999898.onnx",
+                "reward": null,
+                "creation_time": 1773437564.7632487,
+                "auxillary_file_paths": [
+                    "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-9999898.pt"
+                ]
+            },
+            {
+                "steps": 10000026,
+                "file_path": "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-10000026.onnx",
+                "reward": null,
+                "creation_time": 1773437564.7941933,
+                "auxillary_file_paths": [
+                    "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-10000026.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000026,
+            "file_path": "results\\SurvivalOnly100\\lightbike_ppo.onnx",
+            "reward": null,
+            "creation_time": 1773437564.7941933,
+            "auxillary_file_paths": [
+                "results\\SurvivalOnly100\\lightbike_ppo\\lightbike_ppo-10000026.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.10.0+cu130"
+    }
+}
